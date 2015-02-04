@@ -2,7 +2,9 @@ package net.fastix.javalib.hold;
 
 import org.json.simple.JSONObject;
 
-public abstract class Base {
+import java.io.Serializable;
+
+public abstract class Base implements Serializable {
     private double requestTime;
 
     public Base(JSONObject json) {
